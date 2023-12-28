@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrega Rápida</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header class="bg-success">
@@ -16,10 +17,10 @@
         <div class="mb-4">
             <h3>Cadastro</h3>
         </div>
-        <form class="formulario ">
+        <form class="formulario">
             <div class="row ">
                 <div class="col-3">
-                    <input type="text" class="form-control " placeholder="Nome">
+                    <input type="text" class="form-control nome " placeholder="Nome">
                 </div>
                 <div class="col-3">
                     <input type="text" class="form-control" placeholder="Sobre nome">
@@ -38,8 +39,9 @@
                 <div class="col-2 d-flex">
                     <input type="text" class="form-control cep" placeholder="CEP">
                     <div class="ms-2">
-                        <button type="button" class="btn btn-danger">
-                            O
+                        <button type="button" class="btn btn-primary cep-button">
+                            <i class="bi bi-search"></i>
+                            <span class="d-none spinner-border spinner-border-sm"></span>
                         </button>
                     </div>
                 </div>
@@ -61,14 +63,13 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center mt-4">
-                    <button type="submit" class="enviar col-5 btn btn-primary">Enviar</button>
+                    <button type="submit" class="enviar-button col-5 btn btn-success fs-5 fw-semibold">Enviar</button>
                 </div>
             </div>
         </form>
     </div>
-
-
-
+    <script src="./jquery.js"></script>
+    <script src="./jquery.mask.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
